@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+}
+.start, #task, .timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.start, #task{
+    background-color: #dc4443;
+}
+
+/*PÁGINA DE START*/
+.start{
+    color: white;
+}
+.start h1{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 6em;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin-bottom: 90px;
+}
+.start p{
+    font-size: 18px;
+    text-align: center;
+    margin: 0 20px 0 40px;
+}
+.start a{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 50px;
+    transition: transform 0.2s ease;
+}
+.start a:hover{
+    transform: scale(0.9);
+}
+
+/*PÁGINA DE TASK*/
+#task{
+    color: white;
+}
+#task h2{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 4em;
+    letter-spacing: 5px;
+    margin-bottom: 90px;
+}
+#task form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#task form input[type="text"]{
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: none;
+    border-bottom: 2px solid #ff4d4d; 
+    padding: 10px;
+    color: black; 
+    font-size: 1.2em;
+    width: 500px;
+    margin-bottom: 30px;
+    outline: none;
+}
+#task form input[type="submit"]{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 30px;
+    transition: transform 0.2s ease;
+}
+#task form input[type="submit"]:hover{
+    transform: scale(0.9);
+}
+
+/*PÁGINA DE TIMER*/
+.timer h2{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 3em;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+}
+.timer-buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.timer button{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.timer button:hover {
+    transform: scale(0.9);
+}
+.timer img{
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+}
+.on{
+    animation: animacion 1.5s infinite;
+}
+.timer .clock {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 8em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.timer .alert{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+@keyframes animacion{
+    0%, 100%{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}

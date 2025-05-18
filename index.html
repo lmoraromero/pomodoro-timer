@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/funciones.js"></script>
+    
+</head>
+<body>
+    <section class="start">
+        <h1>CRONÓMETRO POMODORO</h1>
+        <p>¿Cansadx de distracciones que no te dejan avanzar con tu día a día? Usando la técnica Pomodoro podrás mejorar tu enfoque y productividad. Solo necesitas 25 minutos, ¿te animas? 🤠</p>
+        <a href="#task">START</a>
+    </section>
+    <section id="task">
+        <h2>¡A por la tarea!</h2>
+        <form>
+            <input type="text" placeholder="Escribe tu tarea aquí...">
+            <input type="submit" value="START">
+        </form>
+    </section>
+    <section class="timer">
+        <h2></h2>
+        <div class="buttons">
+            <button class="work">¡A trabajar!✍️ (25 min)</button>
+            <button class="rest">¡A descansar! 😪 (5 min)</button>
+            <button class="long">¡A descansar aún más! 😴 (15 min)</button>
+        </div>
+        <img src="img/Tomate.png" alt="imagen de un tomate">
+        <div>
+            <p class="clock">00:00</p>
+        </div>
+        <p class="alert"></p>
+    </section>
+</body>
+</html>
