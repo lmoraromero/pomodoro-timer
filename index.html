@@ -11,13 +11,8 @@
     
 </head>
 <body>
-    <section class="start">
-        <h1>CRONÓMETRO POMODORO</h1>
-        <p>¿Cansadx de distracciones que no te dejan avanzar con tu día a día? Usando la técnica Pomodoro podrás mejorar tu enfoque y productividad. Solo necesitas 25 minutos, ¿te animas? 🤠</p>
-        <a href="#task">START</a>
-    </section>
     <section id="task">
-        <h2>¡A por la tarea!</h2>
+        <h1>CRONÓMETRO POMODORO</h1>
         <form>
             <input type="text" placeholder="Escribe tu tarea aquí...">
             <input type="submit" value="START">
@@ -35,6 +30,7 @@
             <p class="clock">00:00</p>
         </div>
         <p class="alert"></p>
+        <audio id="beep" src="sounds/beep.mp3" preload="auto"></audio>
     </section>
 </body>
 </html>

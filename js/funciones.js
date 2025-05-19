@@ -4,6 +4,7 @@ const task = document.querySelector(".timer h2");
 const clock = document.querySelector(".clock");
 const tomato = document.querySelector(".timer img");
 const textAlert = document.querySelector(".timer .alert");
+const beepbeep = document.getElementById("beep");
 
 let countdown; //es undefined por que no está antivado el temporizador, se usa como id del temporizador
 
@@ -40,6 +41,8 @@ function startTimer(minutos){
             clearInterval(countdown);
             stopTomato();
             textAlert.innerText = "¡Tiempo terminado!";
+            beepbeep.currentTime = 0;
+            beepbeep.play();
         }
     }, 1000)
 }

@@ -5,61 +5,28 @@
 section{
     height: 100vh;
     box-sizing: border-box;
-    font-family: "Varela Round", sans-serif;
 }
-.start, #task, .timer{
+#task, .timer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.start, #task{
-    background-color: #dc4443;
-}
 
-/*PÁGINA DE START*/
-.start{
+/*PÁGINA DE TASK*/
+#task{
+    background-color: #dc4443;
     color: white;
 }
-.start h1{
+
+#task h1{
     font-family: "Jersey 10", sans-serif;
     font-size: 6em;
     letter-spacing: 5px;
     font-weight: bold;
     margin-bottom: 90px;
 }
-.start p{
-    font-size: 18px;
-    text-align: center;
-    margin: 0 20px 0 40px;
-}
-.start a{
-    font-family: "Jersey 10", sans-serif;
-    font-size: 3em;
-    letter-spacing: 5px;
-    text-decoration: none;
-    color: white;
-    border: 2px solid white;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 50px;
-    transition: transform 0.2s ease;
-}
-.start a:hover{
-    transform: scale(0.9);
-}
 
-/*PÁGINA DE TASK*/
-#task{
-    color: white;
-}
-#task h2{
-    font-family: "Jersey 10", sans-serif;
-    font-size: 6em;
-    letter-spacing: 5px;
-    margin-bottom: 90px;
-}
 #task form{
     display: flex;
     flex-direction: column;
@@ -102,7 +69,7 @@ section{
     letter-spacing: 5px;
     margin-bottom: 60px;
 }
-.timer-buttons{
+.buttons{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -150,5 +117,59 @@ section{
     }
     50% {
         transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #task h1{
+        font-size: 4em;
+        margin-bottom: 60px;
+    }
+    #task form input[type="text"]{
+        width: 500px;
+        font-size: 1em;
+    }
+    #task form input[type="submit"]{
+        font-size: 2em;
+    }
+    .timer h2{
+        font-size: 2.5em;
+    }
+    .timer button{
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
+    .timer .clock{
+        font-size: 6em;
+    }
+    .timer img{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .buttons button{
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 610px){
+    #task h1{
+        font-size: 2em;
+        margin-bottom: 60px;
+    }
+    #task form input[type="text"]{
+        width: 250px;
+        font-size: 1em;
+    }
+    #task form input[type="submit"]{
+        font-size: 2em;
     }
 }
